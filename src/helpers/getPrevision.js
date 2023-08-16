@@ -1,5 +1,5 @@
 export const getPrevision = async (city) => {
-  const url = `API_KEY`;
+  const url = `api.openweathermap.org/data/2.5/forecast?q=${city}, spain&appid=xxxxxxxxxxxxxxxxxxxxxxxxx&cnt=18`;
   const resp = await fetch(url);
   const { list } = await resp.json();
 
