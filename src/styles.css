@@ -1,0 +1,143 @@
+* {
+  font-family: Helvetica, Arial, sans-serif;
+  /* color: #fff; */
+  box-sizing: border-box;
+}
+
+body {
+  padding: 2rem;
+  background: #333;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+input {
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid rgb(97, 32, 158);
+  color: #333;
+  font-size: 1.2rem;
+  outline: none;
+  padding: 10px 15px;
+  text-align: center;
+  width: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 700;
+  color: white;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(241, 241, 241);
+}
+h3 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: rgb(241, 241, 241);
+}
+
+h4 {
+  font-size: 2rem;
+
+  text-align: left;
+  color: #333;
+  font-weight: 700;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+h5 {
+  color: orange;
+  font-weight: bold;
+}
+
+.card-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  align-content: center;
+  align-items: center;
+
+  background: rgb(58, 179, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(58, 179, 180, 1) 0%,
+    rgba(0, 255, 179, 1) 56%
+  );
+  border: 3px solid white;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* width: 400px; */
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  padding: 1.8rem;
+  overflow: hidden;
+}
+
+.card p {
+  flex: 1;
+  font-size: 1rem;
+  margin-top: 0px;
+  padding: 0px 1rem;
+  text-align: left;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card .degrees {
+  padding: 0.5rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.orange {
+  color: orange;
+}
+
+.red {
+  color: red;
+}
+
+main .SearchHeader {
+  display: block;
+  border: 2px solid white;
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 3rem;
+  padding: 2rem;
+}
+
+/* main:last-child {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+} */
+
+.everyPrevision {
+  background: white;
+  color: #333;
+  padding: 1rem;
+  margin: 1rem;
+  border: 2px solid white;
+  border-radius: 1rem;
+}
