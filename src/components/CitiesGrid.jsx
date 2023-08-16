@@ -22,6 +22,10 @@ export const CitiesGrid = ({ city }) => {
     cityData();
   }, []);
 
+  useEffect(() => {
+    onCityPrevision();
+  }, []);
+
   const kelvinToCelsius = (temp) => {
     if (typeof temp === 'number' && !isNaN(temp)) {
       let celWithoutDecimals = Math.round(temp - 273.15);
