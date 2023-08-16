@@ -3,7 +3,13 @@ import { AddCity } from './components/AddCity';
 import { CitiesGrid } from './components/CitiesGrid';
 
 export const AppMyWeather = () => {
-  const [cities, setCities] = useState(['Málaga']);
+  const [cities, setCities] = useState([
+    'Málaga',
+    'Oslo',
+    'Tokyo',
+    'Porto',
+    'London',
+  ]);
 
   const onAddCity = (newCity) => {
     // setCities((cities) => ['Palencia', ...cities]); Otra forma de poder hacerlo
