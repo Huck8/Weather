@@ -141,3 +141,10 @@ main .SearchHeader {
   border: 2px solid white;
   border-radius: 1rem;
 }
+
+.previsioGrid {
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

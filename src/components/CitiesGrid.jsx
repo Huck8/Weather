@@ -31,36 +31,40 @@ export const CitiesGrid = ({ city }) => {
   };
 
   return (
-    <section className="card">
-      <h3>{city}</h3>
-      <div className="degrees">
-        <span>{kelvinToCelsius(citiesWeather.temp)}</span>
-        <span>Cº</span>
-      </div>
-      <p className="fs-5">
-        {citiesWeather.wind}
-        <span className="fs-5">m/s</span>
-      </p>
-
-      <button onClick={onCityPrevision} className="btn  btn-warning">
-        + info
-      </button>
-
-      {citiesPrevision.map((prevision, index) => (
-        <div className="everyPrevision" key={index}>
-          <h4>{prevision.hour}</h4>
-
-          <h5
-            className={`orange ${
-              kelvinToCelsius(prevision.temp) > 30 ? 'red' : ''
-            }`}
-          >
-            Temperature: {kelvinToCelsius(prevision.temp)}°C
-          </h5>
-          <h6>Wind: {prevision.wind} m/s</h6>
-          <h6>Humidity: {prevision.humidity}</h6>
+    <>
+      <section className="card">
+        <h3>{city}</h3>
+        <div className="degrees">
+          <span>{kelvinToCelsius(citiesWeather.temp)}</span>
+          <span>Cº</span>
         </div>
-      ))}
-    </section>
+        <p className="fs-5">
+          {citiesWeather.wind}
+          <span className="fs-5">m/s</span>
+        </p>
+
+        <button onClick={onCityPrevision} className="btn  btn-warning">
+          + info
+        </button>
+      </section>
+
+      <section className="previsioGrid">
+        {citiesPrevision.map((prevision, index) => (
+          <div className="everyPrevision" key={index}>
+            <h4>{prevision.hour}</h4>
+
+            <h5
+              className={`orange ${
+                kelvinToCelsius(prevision.temp) > 30 ? 'red' : ''
+              }`}
+            >
+              Temperature: {kelvinToCelsius(prevision.temp)}°C
+            </h5>
+            <h6>Wind: {prevision.wind} m/s</h6>
+            <h6>Humidity: {prevision.humidity}</h6>
+          </div>
+        ))}
+      </section>
+    </>
   );
 };
