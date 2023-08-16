@@ -18,7 +18,6 @@ export const AppMyWeather = () => {
         <h1> My WeatherApp</h1>
 
         <AddCity
-          // setCities={setCities}
           onNewCity={(event) => onAddCity(event)} // emite el nuevo valor a insertar. Lo que se esta haciendo es pasando como prop una función definida en el componente padre que sera ejecutada en el componente hijo. Como le estoy pasando una función por eso se ejecuta dentro de la función del componente hijo asi onNewCity().  este prop lo que pasando es una función que recibe un value y ejecuta onAddCategory recibiendo como parametro dicho value.
 
           // El value proviene cuando ejecutes onNewCity dentro de tu componente.

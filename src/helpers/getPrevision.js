@@ -3,8 +3,6 @@ export const getPrevision = async (city) => {
   const resp = await fetch(url);
   const { list } = await resp.json();
 
-  // const { list } = data;
-
   const citiesPrevision = list.map((itemList) => ({
     temp: itemList.main.temp,
     wind: itemList.wind.speed,

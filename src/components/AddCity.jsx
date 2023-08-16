@@ -11,7 +11,7 @@ export const AddCity = ({ onNewCity }) => {
     event.preventDefault();
     if (inputValue.trim().length < 2) return;
     console.log(inputValue);
-    // setCities((cities) => [inputValue, ...cities]);
+
     onNewCity(inputValue.trim());
     setInputValue('');
   };

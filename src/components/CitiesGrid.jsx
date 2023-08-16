@@ -22,22 +22,12 @@ export const CitiesGrid = ({ city }) => {
     cityData();
   }, []);
 
-  // useEffect(() => {
-  //   onCityPrevision();
-  // }, []);
-
-  // const kelvinToCelsius = () => {
-  //   let celWithoutDecimals = Math.round(citiesWeather.temp - 273.15);
-  //   return celWithoutDecimals;
-  // };
-
   const kelvinToCelsius = (temp) => {
     if (typeof temp === 'number' && !isNaN(temp)) {
       let celWithoutDecimals = Math.round(temp - 273.15);
 
       return celWithoutDecimals;
     }
-    //return 'N/A'; // O cualquier otro valor que desees mostrar si no hay un valor válido
   };
 
   return (
@@ -51,10 +41,6 @@ export const CitiesGrid = ({ city }) => {
         {citiesWeather.wind}
         <span className="fs-5">m/s</span>
       </p>
-
-      {/* {citiesWeather.map((cityWeather) => (
-        <li key={cityWeather.id}></li>
-      ))} */}
 
       <button onClick={onCityPrevision} className="btn  btn-warning">
         + info
